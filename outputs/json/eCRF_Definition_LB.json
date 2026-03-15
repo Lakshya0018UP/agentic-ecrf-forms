@@ -1,0 +1,144 @@
+{
+    "study_info": {
+        "protocol_number": "B02-02",
+        "nct_id": "NCT02277613",
+        "official_title": "A Phase 2 Prospective, Randomized, Double-blind, Sham-controlled, Parallel-group, Multi-center Trial of AMI MultiStem\u00ae Therapy in Subjects With Non-ST Elevation Acute Myocardial Infarction",
+        "brief_summary": "This is a double-blind, sham-controlled clinical study to evaluate the safety and feasibility of AMI MultiStem therapy in subjects who have had a heart attack (Non-ST elevation MI).",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "indication": "Heart Attack, NSTEMI",
+        "allocation": "RANDOMIZED",
+        "intervention_model": "PARALLEL",
+        "masking": "DOUBLE",
+        "who_masked": [
+            "PARTICIPANT",
+            "INVESTIGATOR"
+        ],
+        "enrollment_count": 34,
+        "arm_groups": [
+            {
+                "label": "AMI MultiStem cells",
+                "type": "EXPERIMENTAL",
+                "description": "AMI MultiStem cells is a cell therapy medicinal product originating from adherent stem cells taken from the bone marrow of a non-related donor and expanded ex vivo."
+            },
+            {
+                "label": "Sham",
+                "type": "SHAM_COMPARATOR",
+                "description": "Sham procedure using Micro-Infusion Catheter in coronary artery without injection."
+            }
+        ],
+        "interventions": [
+            {
+                "type": "BIOLOGICAL",
+                "name": "AMI MultiStem cells",
+                "description": "AMI MultiStem cells administration in coronary artery with a micro-infusion catheter."
+            },
+            {
+                "type": "OTHER",
+                "name": "Sham",
+                "description": "Sham procedure using Micro-Infusion Catheter in coronary artery without injection."
+            }
+        ]
+    },
+    "forms": [
+        {
+            "form_id": "LB_FORM",
+            "form_name": "LB Assessment",
+            "domain": "LB",
+            "fields": [
+                {
+                    "field_id": "STUDYID",
+                    "label": "Study Identifier",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "VISIT",
+                    "label": "Visit Name",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "LBPERF",
+                    "label": "Was the sample collected?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "LBDAT",
+                    "label": "Collection Date",
+                    "data_type": "Date",
+                    "control_type": "datePicker",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "LB_CENTRAL_LBCAT",
+                    "label": "Lab Panel Name",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "LB_CENTRAL_LBTIM",
+                    "label": "Collection Time",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "LB_CENTRAL_LBPERF",
+                    "label": "Was the sample collected?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "LB_CENTRAL_LBDAT",
+                    "label": "Collection Date",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                }
+            ],
+            "is_log_form": false,
+            "applicable_visits": []
+        }
+    ]
+}

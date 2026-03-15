@@ -1,0 +1,542 @@
+[
+    {
+        "form_id": "CM_FORM",
+        "form_name": "CM Assessment",
+        "domain": "CM",
+        "fields": [
+            {
+                "field_id": "STUDYID",
+                "label": "Study Identifier",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": true
+            },
+            {
+                "field_id": "VISIT",
+                "label": "Visit Name",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": true
+            },
+            {
+                "field_id": "CMPERF",
+                "label": "Date of Concomitant Medication Assessment",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": true
+            },
+            {
+                "field_id": "CMDAT",
+                "label": "Date of Concomitant Medication",
+                "data_type": "Date",
+                "control_type": "datePicker",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMYN",
+                "label": "Were any medications/therapies taken?",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": [
+                    {
+                        "code": "N",
+                        "label": "No"
+                    },
+                    {
+                        "code": "Y",
+                        "label": "Yes"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMSPID",
+                "label": "CM Number",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMTRT",
+                "label": "Medication/Therapy",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMINDC",
+                "label": "Indication",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMDSTXT",
+                "label": "Dose",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMDOSU",
+                "label": "Unit",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": [
+                    {
+                        "code": "%(v/v)",
+                        "label": "Percent Volume per Volume"
+                    },
+                    {
+                        "code": "CAPSULE",
+                        "label": "Capsule"
+                    },
+                    {
+                        "code": "g",
+                        "label": "Gram"
+                    },
+                    {
+                        "code": "INHALATION",
+                        "label": "Inhalation"
+                    },
+                    {
+                        "code": "IU",
+                        "label": "International Dosing Unit"
+                    },
+                    {
+                        "code": "L/h",
+                        "label": "Liter per Hour"
+                    },
+                    {
+                        "code": "L/min",
+                        "label": "Liter per Minute"
+                    },
+                    {
+                        "code": "mg",
+                        "label": "Milligram"
+                    },
+                    {
+                        "code": "mg/kg",
+                        "label": "Milligram per Kilogram"
+                    },
+                    {
+                        "code": "mL",
+                        "label": "Milliliter"
+                    },
+                    {
+                        "code": "mL/h",
+                        "label": "Milliliter per Hour"
+                    },
+                    {
+                        "code": "mL/kg",
+                        "label": "Milliliter per Kilogram"
+                    },
+                    {
+                        "code": "PUFF",
+                        "label": "Puff"
+                    },
+                    {
+                        "code": "SPRAY",
+                        "label": "Spray"
+                    },
+                    {
+                        "code": "TABLET",
+                        "label": "Tablet"
+                    },
+                    {
+                        "code": "ug",
+                        "label": "Microgram"
+                    },
+                    {
+                        "code": "ug/kg",
+                        "label": "Microgram per Kilogram"
+                    },
+                    {
+                        "code": "OTHER",
+                        "label": "Other"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CMDOSSPACER",
+                "label": "<span style=\"color:#eeeeee\">.</span>",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMDOSUO",
+                "label": "Other, Specify",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMDOSFRM",
+                "label": "Dose Form",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": [
+                    {
+                        "code": "AEROSOL",
+                        "label": "Aerosol"
+                    },
+                    {
+                        "code": "CAPSULE",
+                        "label": "Capsule"
+                    },
+                    {
+                        "code": "CREAM",
+                        "label": "Cream"
+                    },
+                    {
+                        "code": "GAS",
+                        "label": "Gas"
+                    },
+                    {
+                        "code": "GEL",
+                        "label": "Gel"
+                    },
+                    {
+                        "code": "INHALANT",
+                        "label": "Inhalant"
+                    },
+                    {
+                        "code": "INJECTABLE",
+                        "label": "Injectable"
+                    },
+                    {
+                        "code": "LIQUID",
+                        "label": "Liquid"
+                    },
+                    {
+                        "code": "OINTMENT",
+                        "label": "Ointment"
+                    },
+                    {
+                        "code": "PATCH",
+                        "label": "Patch"
+                    },
+                    {
+                        "code": "POWDER",
+                        "label": "Powder"
+                    },
+                    {
+                        "code": "SPRAY",
+                        "label": "Spray"
+                    },
+                    {
+                        "code": "SUPPOSITORY",
+                        "label": "Suppository"
+                    },
+                    {
+                        "code": "SUSPENSION",
+                        "label": "Suspension"
+                    },
+                    {
+                        "code": "TABLET",
+                        "label": "Tablet"
+                    },
+                    {
+                        "code": "OTHER",
+                        "label": "Other"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMDOSFRMO",
+                "label": "Other, Specify",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMDOSFRQ",
+                "label": "Frequency",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": [
+                    {
+                        "code": "BID",
+                        "label": "Twice Daily"
+                    },
+                    {
+                        "code": "ONCE",
+                        "label": "Once"
+                    },
+                    {
+                        "code": "PRN",
+                        "label": "As Needed"
+                    },
+                    {
+                        "code": "QD",
+                        "label": "Daily"
+                    },
+                    {
+                        "code": "QOD",
+                        "label": "Every Other Day"
+                    },
+                    {
+                        "code": "TID",
+                        "label": "Three Times Daily"
+                    },
+                    {
+                        "code": "UNKNOWN",
+                        "label": "Unknown"
+                    },
+                    {
+                        "code": "OTHER",
+                        "label": "Other"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMDOSFRQO",
+                "label": "Dose Frequency Other, Specify",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMROUTE",
+                "label": "Route",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": [
+                    {
+                        "code": "INTRALESIONAL",
+                        "label": "Intralesional"
+                    },
+                    {
+                        "code": "INTRAMUSCULAR",
+                        "label": "Intramuscular"
+                    },
+                    {
+                        "code": "INTRAOCULAR",
+                        "label": "Intraocular"
+                    },
+                    {
+                        "code": "INTRAPERITONEAL",
+                        "label": "Intraperitoneal"
+                    },
+                    {
+                        "code": "NASAL",
+                        "label": "Nasal"
+                    },
+                    {
+                        "code": "ORAL",
+                        "label": "Oral"
+                    },
+                    {
+                        "code": "RECTAL",
+                        "label": "Rectal"
+                    },
+                    {
+                        "code": "RESPIRATORY (INHALATION)",
+                        "label": "Inhalation"
+                    },
+                    {
+                        "code": "SUBCUTANEOUS",
+                        "label": "Subcutaneous"
+                    },
+                    {
+                        "code": "TOPICAL",
+                        "label": "Topical"
+                    },
+                    {
+                        "code": "TRANSDERMAL",
+                        "label": "Transdermal"
+                    },
+                    {
+                        "code": "VAGINAL",
+                        "label": "Vaginal"
+                    },
+                    {
+                        "code": "OTHER",
+                        "label": "Other"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMROUTEO",
+                "label": "Other, Specify",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMSTDD",
+                "label": "Start Day",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": [
+                    {
+                        "code": "01",
+                        "label": "01"
+                    },
+                    {
+                        "code": "02",
+                        "label": "02"
+                    },
+                    {
+                        "code": "03",
+                        "label": "03"
+                    },
+                    {
+                        "code": "04",
+                        "label": "04"
+                    },
+                    {
+                        "code": "05",
+                        "label": "05"
+                    },
+                    {
+                        "code": "06",
+                        "label": "06"
+                    },
+                    {
+                        "code": "07",
+                        "label": "07"
+                    },
+                    {
+                        "code": "08",
+                        "label": ""
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMSTMO",
+                "label": "Start Month",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": [
+                    {
+                        "code": "JAN",
+                        "label": "January"
+                    },
+                    {
+                        "code": "FEB",
+                        "label": "February"
+                    },
+                    {
+                        "code": "MAR",
+                        "label": "March"
+                    },
+                    {
+                        "code": "APR",
+                        "label": "April"
+                    },
+                    {
+                        "code": "MAY",
+                        "label": "May"
+                    },
+                    {
+                        "code": "JUN",
+                        "label": "June"
+                    },
+                    {
+                        "code": "JUL",
+                        "label": "July"
+                    },
+                    {
+                        "code": "AUG",
+                        "label": "August"
+                    },
+                    {
+                        "code": "SEP",
+                        "label": "September"
+                    },
+                    {
+                        "code": "OCT",
+                        "label": "October"
+                    },
+                    {
+                        "code": "NOV",
+                        "label": "November"
+                    },
+                    {
+                        "code": "DEC",
+                        "label": "December"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMSTYY",
+                "label": "Start Year",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMONGO",
+                "label": "Ongoing",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": [
+                    {
+                        "code": "N",
+                        "label": "No"
+                    },
+                    {
+                        "code": "Y",
+                        "label": "Yes"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "CM_CMSTDAT",
+                "label": "What was the (concomitant) [medication/medication/therapy/dose] start date?",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": true
+            }
+        ],
+        "is_log_form": false,
+        "applicable_visits": []
+    }
+]

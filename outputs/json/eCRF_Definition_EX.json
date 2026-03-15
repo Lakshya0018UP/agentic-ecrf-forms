@@ -1,0 +1,324 @@
+[
+    {
+        "form_id": "EX_FORM",
+        "form_name": "EX Assessment",
+        "domain": "EX",
+        "fields": [
+            {
+                "field_id": "STUDYID",
+                "label": "Study Identifier",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": true
+            },
+            {
+                "field_id": "VISIT",
+                "label": "Visit Name",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": true
+            },
+            {
+                "field_id": "EXPERF",
+                "label": "Performer of Exposure",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": true
+            },
+            {
+                "field_id": "EXDAT",
+                "label": "Date of Exposure",
+                "data_type": "Date",
+                "control_type": "datePicker",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": true
+            },
+            {
+                "field_id": "EC1",
+                "label": "EC1",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECREFID",
+                "label": "Study Treatment Label Identifier",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECSTDAT",
+                "label": "Start Date",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECENDAT",
+                "label": "End Date",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECDSTXT",
+                "label": "Dose",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECDOSU",
+                "label": "Units",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": [
+                    {
+                        "code": "CAPSULE",
+                        "label": "Capsule"
+                    },
+                    {
+                        "code": "g",
+                        "label": "Gram"
+                    },
+                    {
+                        "code": "IU",
+                        "label": "International Unit"
+                    },
+                    {
+                        "code": "ug",
+                        "label": "Microgram"
+                    },
+                    {
+                        "code": "mg",
+                        "label": "Milligram"
+                    },
+                    {
+                        "code": "mL",
+                        "label": "Mililiter"
+                    },
+                    {
+                        "code": "PUFF",
+                        "label": "Puff"
+                    },
+                    {
+                        "code": "TABLET",
+                        "label": "Tablet"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECDOSFRQ",
+                "label": "Frequency",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": [
+                    {
+                        "code": "PRN",
+                        "label": "As Needed"
+                    },
+                    {
+                        "code": "QID",
+                        "label": "4 Times per Day"
+                    },
+                    {
+                        "code": "TID",
+                        "label": "Three Times Daily"
+                    },
+                    {
+                        "code": "BID",
+                        "label": "Twice Daily"
+                    },
+                    {
+                        "code": "QD",
+                        "label": "Daily"
+                    },
+                    {
+                        "code": "QOD",
+                        "label": "Every Other Day"
+                    },
+                    {
+                        "code": "QM",
+                        "label": "Every Month"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECROUTE",
+                "label": "Route",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": [
+                    {
+                        "code": "INTRALESIONAL",
+                        "label": "Intralesional"
+                    },
+                    {
+                        "code": "INTRAMUSCULAR",
+                        "label": "Intramuscular"
+                    },
+                    {
+                        "code": "INTRAOCULAR",
+                        "label": "Intraocular"
+                    },
+                    {
+                        "code": "INTRAPERITONEAL",
+                        "label": "Intraperitoneal"
+                    },
+                    {
+                        "code": "NASAL",
+                        "label": "Nasal"
+                    },
+                    {
+                        "code": "ORAL",
+                        "label": "Oral"
+                    },
+                    {
+                        "code": "RECTAL",
+                        "label": "Rectal"
+                    },
+                    {
+                        "code": "RESPIRATORY (INHALATION)",
+                        "label": "Respiratory (Inhalation)"
+                    },
+                    {
+                        "code": "SUBCUTANEOUS",
+                        "label": "Subcutaneous"
+                    },
+                    {
+                        "code": "TOPICAL",
+                        "label": "Topical"
+                    },
+                    {
+                        "code": "TRANSDERMAL",
+                        "label": "Transdermal"
+                    },
+                    {
+                        "code": "VAGINAL",
+                        "label": "Vaginal"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECDOSADJ",
+                "label": "Was the dose adjusted?",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": [
+                    {
+                        "code": "N",
+                        "label": "No"
+                    },
+                    {
+                        "code": "Y",
+                        "label": "Yes"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECADJ",
+                "label": "What was the reason the dose was adjusted?",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECITRPYN",
+                "label": "Was the study treatment interrupted?",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": [
+                    {
+                        "code": "N",
+                        "label": "No"
+                    },
+                    {
+                        "code": "Y",
+                        "label": "Yes"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECCINTD",
+                "label": "What was the duration of the treatment interruption?",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECCINTDU",
+                "label": "What was the interruption duration unit?",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": [
+                    {
+                        "code": "MINUTES",
+                        "label": "Minutes"
+                    },
+                    {
+                        "code": "HOURS",
+                        "label": "Hours"
+                    },
+                    {
+                        "code": "DAYS",
+                        "label": "Days"
+                    }
+                ],
+                "protocol_specific": false
+            },
+            {
+                "field_id": "EC_ECTRTCMP",
+                "label": "Did the subject complete the full course of study treatment?",
+                "data_type": "Char",
+                "control_type": "text",
+                "required": false,
+                "codelist": [
+                    {
+                        "code": "N",
+                        "label": "No"
+                    },
+                    {
+                        "code": "Y",
+                        "label": "Yes"
+                    }
+                ],
+                "protocol_specific": false
+            }
+        ],
+        "is_log_form": false,
+        "applicable_visits": []
+    }
+]

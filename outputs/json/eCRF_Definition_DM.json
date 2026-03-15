@@ -1,0 +1,234 @@
+{
+    "study_info": {
+        "protocol_number": "B02-02",
+        "nct_id": "NCT02277613",
+        "official_title": "A Phase 2 Prospective, Randomized, Double-blind, Sham-controlled, Parallel-group, Multi-center Trial of AMI MultiStem\u00ae Therapy in Subjects With Non-ST Elevation Acute Myocardial Infarction",
+        "brief_summary": "This is a double-blind, sham-controlled clinical study to evaluate the safety and feasibility of AMI MultiStem therapy in subjects who have had a heart attack (Non-ST elevation MI).",
+        "study_type": "INTERVENTIONAL",
+        "phase": "PHASE2",
+        "indication": "Heart Attack, NSTEMI",
+        "allocation": "RANDOMIZED",
+        "intervention_model": "PARALLEL",
+        "masking": "DOUBLE",
+        "who_masked": [
+            "PARTICIPANT",
+            "INVESTIGATOR"
+        ],
+        "primary_purpose": "TREATMENT",
+        "enrollment_count": 34,
+        "enrollment_type": "ACTUAL",
+        "arm_groups": [
+            {
+                "label": "AMI MultiStem cells",
+                "type": "EXPERIMENTAL",
+                "description": "AMI MultiStem cells is a cell therapy medicinal product originating from adherent stem cells taken from the bone marrow of a non-related donor and expanded ex vivo.",
+                "interventionNames": [
+                    "Biological: AMI MultiStem cells"
+                ]
+            },
+            {
+                "label": "Sham",
+                "type": "SHAM_COMPARATOR",
+                "description": "Sham procedure using Micro-Infusion Catheter in coronary artery without injection.",
+                "interventionNames": [
+                    "Other: Sham"
+                ]
+            }
+        ],
+        "interventions": [
+            {
+                "type": "BIOLOGICAL",
+                "name": "AMI MultiStem cells",
+                "description": "AMI MultiStem cells administration in coronary artery with a micro-infusion catheter.",
+                "armGroupLabels": [
+                    "AMI MultiStem cells"
+                ]
+            },
+            {
+                "type": "OTHER",
+                "name": "Sham",
+                "description": "Sham procedure using Micro-Infusion Catheter in coronary artery without injection.",
+                "armGroupLabels": [
+                    "Sham"
+                ]
+            }
+        ]
+    },
+    "forms": [
+        {
+            "form_id": "DM_FORM",
+            "form_name": "DM Assessment",
+            "domain": "DM",
+            "fields": [
+                {
+                    "field_id": "STUDYID",
+                    "label": "Study Identifier",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "VISIT",
+                    "label": "Visit Name",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "DMPERF",
+                    "label": "Date/Time of Demographics Collection",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "DMDAT",
+                    "label": "Date of Demographics Collection",
+                    "data_type": "Date",
+                    "control_type": "datePicker",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "DM_AGE",
+                    "label": "Age",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "DM_AGEU",
+                    "label": "What is the age unit used?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "DM_SEX",
+                    "label": "Sex",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": [
+                        {
+                            "code": "F",
+                            "label": "Female"
+                        },
+                        {
+                            "code": "M",
+                            "label": "Male"
+                        },
+                        {
+                            "code": "U",
+                            "label": "Unknown"
+                        },
+                        {
+                            "code": "UNDIFFERENTIATED",
+                            "label": "Undifferentiated"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "DM_ETHNIC",
+                    "label": "Ethnicity",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": [
+                        {
+                            "code": "HISPANIC  OR  LATINO",
+                            "label": "Hispanic or Latino"
+                        },
+                        {
+                            "code": "NOT  HISPANIC  OR  LATINO",
+                            "label": "Not Hispanic or Latino"
+                        },
+                        {
+                            "code": "NOT  REPORTED",
+                            "label": "Not Reported"
+                        },
+                        {
+                            "code": "UNKNOWN",
+                            "label": "Unknown"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "DM_RACE",
+                    "label": "Race (more than one choice is acceptable)",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": [
+                        {
+                            "code": "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
+                            "label": "American Indian or Alaska Native"
+                        },
+                        {
+                            "code": "ASIAN",
+                            "label": "Asian"
+                        },
+                        {
+                            "code": "BLACK_OR_AFRICAN_AMERICAN",
+                            "label": "Black or African American"
+                        },
+                        {
+                            "code": "NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER",
+                            "label": "Native Hawaiian or Other Pacific Islander"
+                        },
+                        {
+                            "code": "WHITE",
+                            "label": "White"
+                        },
+                        {
+                            "code": "NOT_REPORTED",
+                            "label": "Not Reported"
+                        },
+                        {
+                            "code": "UNKNOWN",
+                            "label": "Unknown"
+                        },
+                        {
+                            "code": "OTHER",
+                            "label": "Other"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "DM_RACEOTH",
+                    "label": "Specify Other Race",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "DM_BRTHDAT",
+                    "label": "Birth Date",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                }
+            ],
+            "is_log_form": false,
+            "applicable_visits": []
+        }
+    ]
+}

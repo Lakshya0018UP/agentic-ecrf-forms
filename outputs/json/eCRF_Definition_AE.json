@@ -1,0 +1,359 @@
+{
+    "study_info": {
+        "protocol_number": "B02-02",
+        "nct_id": "NCT02277613",
+        "official_title": "A Phase 2 Prospective, Randomized, Double-blind, Sham-controlled, Parallel-group, Multi-center Trial of"
+    },
+    "forms": [
+        {
+            "form_id": "AE_FORM",
+            "form_name": "AE Assessment",
+            "domain": "AE",
+            "fields": [
+                {
+                    "field_id": "STUDYID",
+                    "label": "Study Identifier",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "VISIT",
+                    "label": "Visit Name",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "AEPERF",
+                    "label": "Date of AE Assessment",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "AEDAT",
+                    "label": "Date of AE Collection",
+                    "data_type": "Date",
+                    "control_type": "datePicker",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AEYN",
+                    "label": "Were any adverse events experienced",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AESPID",
+                    "label": "AE Number",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AETERM",
+                    "label": "What is the adverse event term?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AEONGO",
+                    "label": "Ongoing",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AESEV",
+                    "label": "Severity",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "MILD",
+                            "label": "Mild"
+                        },
+                        {
+                            "code": "MODERATE",
+                            "label": "Moderate"
+                        },
+                        {
+                            "code": "SEVERE",
+                            "label": "Severe"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AESER",
+                    "label": "Was the adverse event serious?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AESDTH",
+                    "label": "Did the adverse event result in death?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AESLIFE",
+                    "label": "Was the adverse event life threatening?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AESHOSP",
+                    "label": "Did the adverse event result in initial or prolonged hospitalization for the subject?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AESDISAB",
+                    "label": "Did the adverse event result in disability or permanent damage?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AESCONG",
+                    "label": "Was the adverse event associated with a congenital anomaly or birth defect?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AESMIE",
+                    "label": "Was the adverse event a medically important event not covered by other serious criteria?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AEREL",
+                    "label": "Relationship to Study Treatment",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AEACN",
+                    "label": "Action taken with Study Treatment",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "DOSE INCREASED",
+                            "label": "Dose Increased"
+                        },
+                        {
+                            "code": "DOSE NOT CHANGED",
+                            "label": "Dose Not Changed"
+                        },
+                        {
+                            "code": "DOSE RATE REDUCED",
+                            "label": "Dose Rate Reduced"
+                        },
+                        {
+                            "code": "DOSE REDUCED",
+                            "label": "Dose Reduced"
+                        },
+                        {
+                            "code": "DRUG INTERRUPTED",
+                            "label": "Drug Interrupted"
+                        },
+                        {
+                            "code": "DRUG WITHDRAWN",
+                            "label": "Drug Withdrawn"
+                        },
+                        {
+                            "code": "NOT APPLICABLE",
+                            "label": "Not Applicable"
+                        },
+                        {
+                            "code": "UNKNOWN",
+                            "label": "Unknown"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AEACNOTH",
+                    "label": "Other Action Taken",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AEOUT",
+                    "label": "Outcome",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "FATAL",
+                            "label": "Fatal"
+                        },
+                        {
+                            "code": "NOT RECOVERED/NOT RESOLVED",
+                            "label": "Not Recovered or Not Resolved"
+                        },
+                        {
+                            "code": "RECOVERED/RESOLVED",
+                            "label": "Recovered or Resolved"
+                        },
+                        {
+                            "code": "RECOVERED/RESOLVED WITH SEQUELAE",
+                            "label": "Recovered or Resolved with Sequelae"
+                        },
+                        {
+                            "code": "RECOVERING/RESOLVING",
+                            "label": "Recovering or Resolving"
+                        },
+                        {
+                            "code": "UNKNOWN",
+                            "label": "Unknown"
+                        }
+                    ],
+                    "protocol_specific": false
+                }
+            ],
+            "is_log_form": false,
+            "applicable_visits": []
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+[
+    {
+        "form_id": "MH_FORM",
+        "form_name": "Medical History",
+        "domain": "MH",
+        "fields": [
+            {
+                "field_id": "MHPERF",
+                "label": "Was Medical History assessment performed?",
+                "data_type": "Char",
+                "control_type": "radio",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "MHYN",
+                "label": "Were any medical conditions or events reported?",
+                "data_type": "Char",
+                "control_type": "radio",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "MHSPID",
+                "label": "MH Number",
+                "data_type": "Char",
+                "control_type": "textInput",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "MHDAT",
+                "label": "Collection Date",
+                "data_type": "Date",
+                "control_type": "datePicker",
+                "required": true,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "MHTERM",
+                "label": "Medical History Term",
+                "data_type": "Char",
+                "control_type": "textInput",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "MHSTDAT",
+                "label": "Start Date",
+                "data_type": "Date",
+                "control_type": "datePicker",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "MHONGO",
+                "label": "Ongoing",
+                "data_type": "Char",
+                "control_type": "radio",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "MHENDAT",
+                "label": "End Date",
+                "data_type": "Date",
+                "control_type": "datePicker",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            },
+            {
+                "field_id": "MHENDATSPACER",
+                "label": "<span style=\"color:#eeeeee\">.</span>",
+                "data_type": "Note",
+                "control_type": "note",
+                "required": false,
+                "codelist": null,
+                "protocol_specific": false
+            }
+        ],
+        "is_log_form": false
+    }
+]

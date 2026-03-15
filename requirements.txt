@@ -1,0 +1,16 @@
+langchain
+langchain-community
+langchain-qdrant
+langchain-google-genai
+langchain-text-splitters
+langgraph
+pydantic
+streamlit
+google-generativeai
+qdrant-client
+pandas
+python-docx
+docx2txt
+pypdf
+pyyaml
+python-dotenv

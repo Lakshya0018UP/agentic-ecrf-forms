@@ -1,0 +1,343 @@
+{
+    "study_info": {
+        "protocol_number": "B02-02",
+        "nct_id": "NCT02277613",
+        "official_title": "A Phase 2 Prospective, Randomized, Double-blind, Sham-controlled, Parallel-group, Multi-center Trial of AMI MultiStem\u00ae Therapy in Subjects With Non-ST Elevation Acute Myocardial Infarction",
+        "brief_summary": "This is a double-blind, sham-controlled clinical study to evaluate the safety and feasibility of AMI MultiStem therapy"
+    },
+    "forms": [
+        {
+            "form_id": "VS_FORM",
+            "form_name": "VS Assessment",
+            "domain": "VS",
+            "fields": [
+                {
+                    "field_id": "STUDYID",
+                    "label": "Study Identifier",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VISIT",
+                    "label": "Visit Name",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VSPERF",
+                    "label": "Were vital signs performed?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VSDAT",
+                    "label": "Date",
+                    "data_type": "Date",
+                    "control_type": "datePicker",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_SYSBP_VSORRES",
+                    "label": "Systolic Blood Pressure",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_SYSBP_VSORRESU",
+                    "label": "Systolic Blood Pressure Unit",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_DIABP_VSORRES",
+                    "label": "Diastolic Blood Pressure",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_DIABP_VSORRESU",
+                    "label": "Diastolic Blood Pressure Unit",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VSPOS",
+                    "label": "Blood Pressure Position",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "PRONE",
+                            "label": "Prone"
+                        },
+                        {
+                            "code": "SEMI-RECUMBENT",
+                            "label": "Semi-Recumbent"
+                        },
+                        {
+                            "code": "SITTING",
+                            "label": "Sitting"
+                        },
+                        {
+                            "code": "STANDING",
+                            "label": "Standing"
+                        },
+                        {
+                            "code": "SUPINE",
+                            "label": "Supine"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VSLOC",
+                    "label": "Temperature Location",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "AXILLA",
+                            "label": "Axilla"
+                        },
+                        {
+                            "code": "EAR",
+                            "label": "Ear"
+                        },
+                        {
+                            "code": "FOREHEAD",
+                            "label": "Forehead"
+                        },
+                        {
+                            "code": "ORAL CAVITY",
+                            "label": "Oral Cavity"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_HEIGHT_VSORRES",
+                    "label": "Height",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_HEIGHT_VSORRESU",
+                    "label": "Height Unit",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "cm",
+                            "label": "Centimeter"
+                        },
+                        {
+                            "code": "in",
+                            "label": "Inch"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_WEIGHT_VSORRES",
+                    "label": "Weight",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_WEIGHT_VSORRESU",
+                    "label": "Weight Unit",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "kg",
+                            "label": "Kilogram"
+                        },
+                        {
+                            "code": "LB",
+                            "label": "Pound"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_PULSE_VSORRES",
+                    "label": "Pulse",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_PULSE_VSORRESU",
+                    "label": "Pulse Unit",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_RESP_VSORRES",
+                    "label": "Respiratory Rate",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_RESP_VSORRESU",
+                    "label": "Respiratory Rate Unit",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_TEMP_VSORRES",
+                    "label": "Temperature",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_TEMP_VSORRESU",
+                    "label": "Temperature Unit",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "C",
+                            "label": "Celsius"
+                        },
+                        {
+                            "code": "F",
+                            "label": "Fahrenheit"
+                        }
+                    ],
+                    "protocol_specific": false
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_VSPERF",
+                    "label": "Were vital signs performed?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": [
+                        {
+                            "code": "N",
+                            "label": "No"
+                        },
+                        {
+                            "code": "Y",
+                            "label": "Yes"
+                        }
+                    ],
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_VSDAT",
+                    "label": "Date",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_BP_VSPOS",
+                    "label": "Blood Pressure Position",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "PRONE",
+                            "label": "Prone"
+                        },
+                        {
+                            "code": "SEMI-RECUMBENT",
+                            "label": "Semi-Recumbent"
+                        },
+                        {
+                            "code": "SITTING",
+                            "label": "Sitting"
+                        },
+                        {
+                            "code": "STANDING",
+                            "label": "Standing"
+                        },
+                        {
+                            "code": "SUPINE",
+                            "label": "Supine"
+                        }
+                    ],
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_BP_VSLOC",
+                    "label": "Blood Pressure Location",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": [
+                        {
+                            "code": "BRACHIAL ARTERY"
+                        }
+                    ],
+                    "protocol_specific": true
+                }
+            ],
+            "is_log_form": false,
+            "applicable_visits": []
+        }
+    ]
+}
