@@ -142,7 +142,12 @@ with tab1:
                 # Show both HTML Form and Raw JSON Specification using expanders for clarity
                 st.markdown("### Visual Form Preview")
                 html_content = render_form_html(form_obj)
-                st.markdown(html_content, unsafe_allow_html=True)
+                
+                # Use components.html for better CSS isolation and rendering
+                import streamlit.components.v1 as components
+                # Calculate approximate height (50px per field + header/footer)
+                calc_height = max(400, (len(form_obj.fields) * 60) // 2 + 200)
+                components.html(html_content, height=calc_height, scrolling=True)
                 
                 with st.expander("📄 Raw JSON Specification"):
                     st.json(form_obj.model_dump() if hasattr(form_obj, 'model_dump') else form_obj)

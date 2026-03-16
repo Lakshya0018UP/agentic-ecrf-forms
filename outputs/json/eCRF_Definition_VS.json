@@ -1,9 +1,32 @@
 {
     "study_info": {
         "protocol_number": "B02-02",
+        "indication": "Heart Attack, NSTEMI",
+        "title": "A Phase 2 Prospective, Randomized, Double-blind, Sham-controlled, Parallel-group, Multi-center Trial of AMI MultiStem\u00ae Therapy in Subjects With Non-ST Elevation Acute Myocardial Infarction",
+        "phase": "PHASE2",
         "nct_id": "NCT02277613",
         "official_title": "A Phase 2 Prospective, Randomized, Double-blind, Sham-controlled, Parallel-group, Multi-center Trial of AMI MultiStem\u00ae Therapy in Subjects With Non-ST Elevation Acute Myocardial Infarction",
-        "brief_summary": "This is a double-blind, sham-controlled clinical study to evaluate the safety and feasibility of AMI MultiStem therapy"
+        "study_type": "INTERVENTIONAL",
+        "allocation": "RANDOMIZED",
+        "intervention_model": "PARALLEL",
+        "masking": "DOUBLE",
+        "masking_who": [
+            "PARTICIPANT",
+            "INVESTIGATOR"
+        ],
+        "enrollment_count": 34,
+        "arm_groups": [
+            {
+                "label": "AMI MultiStem cells",
+                "type": "EXPERIMENTAL",
+                "description": "AMI MultiStem cells is a cell therapy medicinal product originating from adherent stem cells taken from the bone marrow of a non-related donor and expanded ex vivo."
+            },
+            {
+                "label": "Sham",
+                "type": "SHAM_COMPARATOR",
+                "description": "Sham procedure using Micro-Infusion Catheter in coronary artery without injection."
+            }
+        ]
     },
     "forms": [
         {
@@ -18,7 +41,7 @@
                     "control_type": "text",
                     "required": true,
                     "codelist": null,
-                    "protocol_specific": false
+                    "protocol_specific": true
                 },
                 {
                     "field_id": "VISIT",
@@ -27,7 +50,7 @@
                     "control_type": "text",
                     "required": true,
                     "codelist": null,
-                    "protocol_specific": false
+                    "protocol_specific": true
                 },
                 {
                     "field_id": "VSPERF",
@@ -70,7 +93,7 @@
                     "label": "Systolic Blood Pressure Unit",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": null,
                     "protocol_specific": false
                 },
@@ -88,7 +111,7 @@
                     "label": "Diastolic Blood Pressure Unit",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": null,
                     "protocol_specific": false
                 },
@@ -153,7 +176,7 @@
                     "label": "Height",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": null,
                     "protocol_specific": false
                 },
@@ -162,7 +185,7 @@
                     "label": "Height Unit",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "cm",
@@ -180,7 +203,7 @@
                     "label": "Weight",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": null,
                     "protocol_specific": false
                 },
@@ -189,7 +212,7 @@
                     "label": "Weight Unit",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "kg",
@@ -207,7 +230,7 @@
                     "label": "Pulse",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": null,
                     "protocol_specific": false
                 },
@@ -216,7 +239,7 @@
                     "label": "Pulse Unit",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": null,
                     "protocol_specific": false
                 },
@@ -225,7 +248,7 @@
                     "label": "Respiratory Rate",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": null,
                     "protocol_specific": false
                 },
@@ -234,7 +257,7 @@
                     "label": "Respiratory Rate Unit",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": null,
                     "protocol_specific": false
                 },
@@ -243,7 +266,7 @@
                     "label": "Temperature",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": null,
                     "protocol_specific": false
                 },
@@ -252,7 +275,7 @@
                     "label": "Temperature Unit",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "C",
@@ -297,7 +320,7 @@
                     "label": "Blood Pressure Position",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "PRONE",
@@ -327,10 +350,83 @@
                     "label": "Blood Pressure Location",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
-                            "code": "BRACHIAL ARTERY"
+                            "code": "BRACHIAL ARTERY",
+                            "label": "Brachial Artery"
+                        },
+                        {
+                            "code": "FINGER",
+                            "label": "Finger"
+                        },
+                        {
+                            "code": "PERIPHERAL ARTERY",
+                            "label": "Peripheral Artery"
+                        },
+                        {
+                            "code": "RADIAL ARTERY",
+                            "label": "Radial Artery"
+                        }
+                    ],
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_PULSE_VSLOC",
+                    "label": "Pulse Location",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": [
+                        {
+                            "code": "BRACHIAL ARTERY",
+                            "label": "Brachial Artery"
+                        },
+                        {
+                            "code": "CAROTID ARTERY",
+                            "label": "Carotid Artery"
+                        },
+                        {
+                            "code": "CEREBRAL ARTERY",
+                            "label": "Cerebral Artery"
+                        },
+                        {
+                            "code": "DORSALIS PEDIS ARTERY",
+                            "label": "Dorsalis Pedis Artery"
+                        },
+                        {
+                            "code": "FEMORAL ARTERY",
+                            "label": "Femoral Artery"
+                        },
+                        {
+                            "code": "PERIPHERAL ARTERY",
+                            "label": "Peripheral Artery"
+                        }
+                    ],
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "VS_HORIZONTAL_TEMP_VSLOC",
+                    "label": "Temperature Location",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": [
+                        {
+                            "code": "AXILLA",
+                            "label": "Axilla"
+                        },
+                        {
+                            "code": "EAR",
+                            "label": "Ear"
+                        },
+                        {
+                            "code": "FOREHEAD",
+                            "label": "Forehead"
+                        },
+                        {
+                            "code": "ORAL CAVITY",
+                            "label": "Oral Cavity"
                         }
                     ],
                     "protocol_specific": true

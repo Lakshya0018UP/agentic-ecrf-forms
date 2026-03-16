@@ -1,8 +1,20 @@
 {
     "study_info": {
         "protocol_number": "B02-02",
+        "indication": "Heart Attack, NSTEMI",
+        "title": "A Phase 2 Prospective, Randomized, Double-blind, Sham-controlled, Parallel-group, Multi-center Trial of AMI MultiStem\u00ae Therapy in Subjects With Non-ST Elevation Acute Myocardial Infarction",
+        "phase": "PHASE2",
         "nct_id": "NCT02277613",
-        "official_title": "A Phase 2 Prospective, Randomized, Double-blind, Sham-controlled, Parallel-group, Multi-center Trial of"
+        "official_title": "A Phase 2 Prospective, Randomized, Double-blind, Sham-controlled, Parallel-group, Multi-center Trial of AMI MultiStem\u00ae Therapy in Subjects With Non-ST Elevation Acute Myocardial Infarction",
+        "brief_summary": "This is a double-blind, sham-controlled clinical study to evaluate the safety and feasibility of AMI MultiStem therapy in subjects who have had a heart attack (Non-ST elevation MI).",
+        "study_type": "INTERVENTIONAL",
+        "enrollment_count": 34,
+        "allocation": "RANDOMIZED",
+        "intervention_model": "PARALLEL",
+        "masking": "DOUBLE",
+        "who_masked": [
+            "PARTICIPANT"
+        ]
     },
     "forms": [
         {
@@ -30,7 +42,7 @@
                 },
                 {
                     "field_id": "AEPERF",
-                    "label": "Date of AE Assessment",
+                    "label": "Adverse Event Assessment Date",
                     "data_type": "Char",
                     "control_type": "text",
                     "required": true,
@@ -39,7 +51,7 @@
                 },
                 {
                     "field_id": "AEDAT",
-                    "label": "Date of AE Collection",
+                    "label": "Date of Adverse Event Collection",
                     "data_type": "Date",
                     "control_type": "datePicker",
                     "required": true,
@@ -48,10 +60,10 @@
                 },
                 {
                     "field_id": "AE_AEYN",
-                    "label": "Were any adverse events experienced",
+                    "label": "Were any adverse events experienced?",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "N",
@@ -69,7 +81,7 @@
                     "label": "AE Number",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": null,
                     "protocol_specific": false
                 },
@@ -87,7 +99,7 @@
                     "label": "Ongoing",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "N",
@@ -105,7 +117,7 @@
                     "label": "Severity",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "MILD",
@@ -127,7 +139,7 @@
                     "label": "Was the adverse event serious?",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "N",
@@ -145,7 +157,7 @@
                     "label": "Did the adverse event result in death?",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "N",
@@ -163,7 +175,7 @@
                     "label": "Was the adverse event life threatening?",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "N",
@@ -181,7 +193,7 @@
                     "label": "Did the adverse event result in initial or prolonged hospitalization for the subject?",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "N",
@@ -199,7 +211,7 @@
                     "label": "Did the adverse event result in disability or permanent damage?",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "N",
@@ -217,7 +229,7 @@
                     "label": "Was the adverse event associated with a congenital anomaly or birth defect?",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "N",
@@ -235,7 +247,7 @@
                     "label": "Was the adverse event a medically important event not covered by other serious criteria?",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "N",
@@ -253,7 +265,7 @@
                     "label": "Relationship to Study Treatment",
                     "data_type": "Char",
                     "control_type": "text",
-                    "required": false,
+                    "required": true,
                     "codelist": [
                         {
                             "code": "N",
@@ -350,6 +362,33 @@
                         }
                     ],
                     "protocol_specific": false
+                },
+                {
+                    "field_id": "AE_AETERM",
+                    "label": "What is the adverse event term?",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "AE_AESTDAT",
+                    "label": "Start Date",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": true,
+                    "codelist": null,
+                    "protocol_specific": true
+                },
+                {
+                    "field_id": "AE_AEENDAT",
+                    "label": "End Date",
+                    "data_type": "Char",
+                    "control_type": "text",
+                    "required": false,
+                    "codelist": null,
+                    "protocol_specific": true
                 }
             ],
             "is_log_form": false,
