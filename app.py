@@ -165,17 +165,32 @@ with tab1:
             st.write(f"**Indication:** {final_state.get('study_info', {}).get('indication', 'N/A')}")
             
             if st.button("📄 Export Final .docx Report"):
-                forms = [eCRFForm(**f) if isinstance(f, dict) else f for f in final_state.get('final_forms', [])]
-                out_filename = f"outputs/reports/eCRF_Specification_{final_state.get('current_domain')}.docx"
-                report_path = generate_docx_report(
-                    forms, 
-                    filename=out_filename,
-                    study_info=final_state.get('study_info'),
-                    visit_schedule=final_state.get('visit_schedule'),
-                    assessment_map=final_state.get('assessment_map')
-                )
-                with open(report_path, "rb") as file:
-                    st.download_button(label="⬇️ Download Document", data=file, file_name=os.path.basename(report_path))
+                try:
+                    forms = [eCRFForm(**f) if isinstance(f, dict) else f for f in final_state.get('final_forms', [])]
+                    out_filename = f"outputs/reports/eCRF_Specification_{final_state.get('current_domain')}.docx"
+                    
+                    # Ensure the filename is clean and available
+                    report_path = generate_docx_report(
+                        forms, 
+                        filename=out_filename,
+                        study_info=final_state.get('study_info'),
+                        visit_schedule=final_state.get('visit_schedule'),
+                        assessment_map=final_state.get('assessment_map')
+                    )
+                    
+                    with open(report_path, "rb") as file:
+                        st.download_button(
+                            label="⬇️ Click to Download Document", 
+                            data=file, 
+                            file_name=os.path.basename(report_path),
+                            mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                            key="download_btn"
+                        )
+                    st.success(f"✅ Report generated: {os.path.basename(report_path)}")
+                except PermissionError:
+                    st.error("🚨 **Permission Denied!** Please close the Word document if it is already open and try again.")
+                except Exception as e:
+                    st.error(f"❌ **Export Failed:** {str(e)}")
 
 with tab2:
     st.subheader("Audit & Quality Review")
